@@ -92,6 +92,21 @@
     text-decoration: none;
   }
   .btn:hover { opacity: 0.9; }
+  .qr { margin-top: 22px; }
+  .qr-label {
+    font-size: 12px;
+    color: var(--text);
+    margin: 0 0 10px;
+  }
+  /* White plate behind the code so it stays scannable in dark mode, where the
+     card background would otherwise invert the quiet zone. */
+  .qr img {
+    background: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+  }
   .steps {
     background: var(--bg-card);
     border: 1px solid var(--border);
@@ -133,7 +148,11 @@
       <div class="platform-icon">📱</div>
       <h2>Android</h2>
       <p>Sideloaded install — Android will ask you to allow "install from unknown sources" the first time. That's expected.</p>
-      <a class="btn" href="https://expo.dev/artifacts/eas/VR2-2cjhFLEds-_W15gPSL_i1Z7mhuGcO35pvqQ3bn4.apk">Download for Android</a>
+      <a class="btn" href="https://expo.dev/artifacts/eas/NEith6B8OMLxEzn9WFzX4IRjl0qjN1NlpE4WwDibP8o.apk">Download for Android</a>
+      <div class="qr">
+        <p class="qr-label">or scan with your phone</p>
+        <img src="install-qr.svg" alt="QR code linking to the Android download" width="148" height="148">
+      </div>
     </div>
   </div>
 
